@@ -112,7 +112,7 @@ controller.hears(['.*'], ['direct_message', 'direct_mention', 'mention', 'ambien
                                 bot.reply(message, err.message);
                             }
                         } else if (isDefined(responseText)) {
-                            bot.reply(message, responseText, (err, resp) => {
+                            bot.reply(message, responseText+"arrive", (err, resp) => {
                                 if (err) {
                                     console.error(err);
                                 }
